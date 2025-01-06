@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./assets/images/favicon-32x32.png" type="image/x-icon">
+  <link rel="stylesheet" href="./assets/styles/style.css">
+  <title>Frontend Mentor | Pricing Component</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <header class="header">
+    <h1 class="heading montserrat-bold ">Our Pricing</h1>
+  </header>
+  <main>
+    <div class="selections">
+      <h2>Annually</h2>
+      <label class="toggle" for="pricing-toggle">
+        <input type="checkbox" id="pricing-toggle" role="switch" aria-checked="false"
+          aria-label="Toggle pricing between monthly and annually" />
+        <span class="slider"></span>
+      </label>
+      <h2>Monthly</h2>
+    </div>
+    <!-- Annually Pricing -->
+    <section class="container">
+      <article class="pricing__item basic__item">
+        <h3 class="pricing__title">Basic</h3>
+        <p class="pricing__amount" id="basic-price"> &dollar;199.99</p>
+        <ul>
+          <li>500 GB Storage</li>
+          <li>2 Users Allowed</li>
+          <li>Send up to 3 GB</li>
+        </ul>
+        <button class="pricing__button">Learn More</button>
+      </article>
+      <article class="pricing__item pro__item">
+        <h3 class="pricing__title pro__title">Professional</h3>
+        <p class="pricing__amount pro__amount" id="pro-price"> &dollar;249.99</p>
+        <ul>
+          <li>1 TB Storage</li>
+          <li>5 Users Allowed</li>
+          <li>Send up to 10 GB</li>
+        </ul>
+        <button class="pricing__button pro__button">Learn More</button>
+      </article>
+      <article class="pricing__item master__item">
+        <h3 class="pricing__title">Master</h3>
+        <p class="pricing__amount" id="master-price">&dollar;399.99</p>
+        <ul>
+          <li>2 TB Storage</li>
+          <li>10 Users Allowed</li>
+          <li>Send up to 20 GB</li>
+        </ul>
+        <button class="pricing__button">Learn More</button>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io/challenges/pricing-component-with-toggle-8vPwRMIC"
+        target="_blank" rel="noopener noreferrer">Frontend Mentor</a>.
+      Coded by <a href="https://www.github.com/mayen007">Mayen007</a>.
+    </div>
+  </footer>
+  <script src="./assets/styles/script.js" defer></script>
+</body>
+
+</html>
